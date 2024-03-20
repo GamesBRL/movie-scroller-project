@@ -1,7 +1,7 @@
-# Game Searcher Project
-A college web project in this website you can discover a lot of games from different plataforms and follow your favorites game studios and publishers.
+# Movie Scroller Project
+Movie Scroller is a college website project, a website where you can just scroll for random movies.
 
-- Games from all plataforms in one place
-- Discover new games
-- Follow your favorites game studios and publishers
-- Search by your preferences
+- Just Scroll
+- Discover random movies
+- See where you can watch it
+- Synopsis and Cast
