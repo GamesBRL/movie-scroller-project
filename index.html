@@ -17,45 +17,81 @@
         }
         body{
             background-color: #000;
+            color: #ddd;
         }
         img{
             width: 300px;
             height: 450px;
         }
-        .icon{
-            width: 84px;
-            height: 84px;
+        .bar{
+            background: #000;
+            position: fixed;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+        }
+        .bar .logo{
+            width: 120px;
+            height: 120px;
+        }
+        .bar .titulo{
+            text-align: center;
+            text-transform: uppercase;
+            margin-right: 785px;
+        }
+        .scrollVertical{
+            margin-top: 120px;
+            display: grid;
+        }
+        .scrollVertical .element{
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 200px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <!--ICON-->
-    <a href="index.html">
-        <img class="icon" src="pages/images/Icons/Logo.jpg">
-    </a>
+    <!--Barra de Cima-->
+    <div class="bar">
+        <a href="index.html">
+            <img class="logo" src="pages/images/Icons/Logo.jpg">
+        </a>
+        <h1 class="titulo">Movie Scroller</h1>
+    </div>
     <br>
-    <!--OPPENHEIMER-->
-    <a href="pages/oppenheimer.html">
-        <img src="pages/images/Icons/Oppenheimer.jpg">
-        <h1>Oppenheimer</h1>
-    </a>
-    <br>
-    <!--BARBIE-->
-    <a href="pages/barbie.html">
-        <img src="pages/images/Icons/barbie.jpg">
-        <h1>Barbie</h1>
-    </a>
-    <br>
-    <!--POOR THINGS-->
-    <a href="pages/poor-things.html">
-        <img src="pages/images/Icons/Poor Things.jpg">
-        <h1>Pobres Criaturas</h1>
-    </a>
-    <br>
-    <!--VIDAS PASSADAS-->
-    <a href="pages/vidas-passadas.html">
-        <img src="pages/images/Icons/Vidas Passadas.jpg">
-        <h1>Vidas Passadas</h1>
-    </a>
+    <div class="scrollVertical">
+        <!--OPPENHEIMER-->
+        <div class="element">
+            <a href="pages/oppenheimer.html">
+                <img src="pages/images/Icons/Oppenheimer.jpg">
+                <h1>Oppenheimer</h1>
+            </a>
+        </div>
+        <!--BARBIE-->
+        <div class="element">
+            <a href="pages/barbie.html">
+                <img src="pages/images/Icons/barbie.jpg">
+                <h1>Barbie</h1>
+            </a>
+        </div>
+        <!--POOR THINGS-->
+        <div class="element">
+            <a href="pages/poor-things.html">
+                <img src="pages/images/Icons/Poor Things.jpg">
+                <h1>Pobres Criaturas</h1>
+            </a>
+        </div>
+        <!--VIDAS PASSADAS-->
+        <div class="element">
+            <a href="pages/vidas-passadas.html">
+                <img src="pages/images/Icons/Vidas Passadas.jpg">
+                <h1>Vidas Passadas</h1>
+            </a>
+        </div>
+    </div>
 </body>
 </html>

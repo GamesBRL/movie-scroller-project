@@ -27,14 +27,29 @@
             width: 150px;
             height: 200px;
         }
-        .logo{
+        .bar{
+            background: #000;
+            position: fixed;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+        }
+        .bar .logo{
             width: 120px;
             height: 120px;
+        }
+        .bar .titulo{
+            text-transform: uppercase;
+            margin-right: 820px;
         }
         .imagemFilme{
             width: 400px;
             height: 600px;
             display: block;
+            margin-top: 100px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -49,6 +64,11 @@
             line-height: 20px;
             text-align: center;
         }
+        .scrollHorizontal .element2{
+            margin-right: 50px;
+            line-height: 20px;
+            text-align: center;
+        }
         .scrollHorizontal .element .joshHarnett{width: 250px;}
         .scrollHorizontal .element .floraNolan{width: 200px;}
         .scrollHorizontal .element .guyBurnet{width: 200px;}
@@ -56,13 +76,20 @@
             width: 100px;
             height: 100px;
         }
+        .scrollHorizontal .element2 .icon{
+            width: 100px;
+            height: 100px;
+        }
     </style>
 </head>
 <body>
     <!--Barra de Cima-->
-    <a href="/index.html">
-        <img class="logo" src="images/Icons/Logo.jpg">
-    </a>
+    <div class="bar">
+        <a href="../index.html">
+            <img class="logo" src="images/Icons/Logo.jpg">
+        </a>
+        <h1 class="titulo">Oppenheimer</h1>
+    </div>
     <br>
     <!--IMAGEM DE FUNDO-->
     <img class="imagemFilme" src="images/Icons/Oppenheimer.jpg">
@@ -382,7 +409,7 @@
     <h3>Onde Assistir</h3>
     <div class="scrollHorizontal">
         <!--Youtube-->
-        <div class="element">
+        <div class="element2">
             <a href="https://www.youtube.com/watch?v=8CSD32QFLW8">
                 <img class="icon" src="images/Icons/youtube_40x40.png">
                 <h4>Youtube</h4>
@@ -390,7 +417,7 @@
             </a>
         </div>
         <!--Apple TV-->
-        <div class="element">
+        <div class="element2">
             <a href="https://tv.apple.com/br/movie/oppenheimer/umc.cmc.5gylew9icuhfiifdv3oxwxen8?action=play">
                 <img class="icon" src="images/Icons/apple_tv_plus_40x40.png">
                 <h4>Apple TV</h4>
@@ -398,7 +425,7 @@
             </a>
         </div>
         <!--Google Play Filmes-->
-        <div class="element">
+        <div class="element2">
             <a href="https://play.google.com/store/movies/details?id=eqSQyOgIc30.P">
                 <img class="icon" src="images/Icons/googleplaytvandmovies_40x40.png">
                 <h4>Google Play Movies</h4>
@@ -406,7 +433,7 @@
             </a>
         </div>
         <!--Amazon Prime Video-->
-        <div class="element">
+        <div class="element2">
             <a href="https://www.primevideo.com/dp/amzn1.dv.gti.1bfde9bc-06c4-472d-84e8-13e019fa34b1?autoplay=0&ref_=atv_cf_strg_wb">
                 <img class="icon" src="images/Icons/amazon_prime_40x40.png">
                 <h4>Amazon Prime Video</h4>
