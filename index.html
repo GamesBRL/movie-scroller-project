@@ -25,7 +25,7 @@
             width: 300px;
             height: 450px;
         }
-        .bar{
+        header{
             background: #000;
             position: fixed;
             width: 100%;
@@ -36,20 +36,20 @@
             display: flex;
             box-shadow: 0 4px 2px -2px rgb(42, 42, 42);
         }
-        .bar .logo{
+        header .logo{
             width: 120px;
             height: 120px;
         }
-        .bar .titulo{
+        header .titulo{
             text-align: center;
             text-transform: uppercase;
             
         }
-        .scrollVertical{
-            margin-top: 120px;
+        main{
+            margin-top: 125px;
             display: grid;
         }
-        .scrollVertical .element{
+        section{
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 200px;
@@ -58,43 +58,41 @@
     </style>
 </head>
 <body>
-    <!--Barra de Cima-->
-    <div class="bar">
-        <a href="index.html">
-            <img class="logo" src="pages/images/Icons/Logo.jpg">
-        </a>
+    <header>
+        <nav>
+            <a href="index.html"><img class="logo" src="pages/images/Icons/Logo.jpg"></a>
+        </nav>
         <h1 class="titulo">Movie Scroller</h1>
-    </div>
-    <br>
-    <div class="scrollVertical">
+    </header>
+    <main>
         <!--OPPENHEIMER-->
-        <div class="element">
+        <section>
             <a href="pages/oppenheimer.html">
                 <img src="pages/images/Icons/Oppenheimer.jpg">
-                <h1>Oppenheimer</h1>
+                <h2>Oppenheimer</h2>
             </a>
-        </div>
+        </section>
         <!--BARBIE-->
-        <div class="element">
+        <section>
             <a href="pages/barbie.html">
                 <img src="pages/images/Icons/barbie.jpg">
-                <h1>Barbie</h1>
+                <h2>Barbie</h2>
             </a>
-        </div>
+        </section>
         <!--POOR THINGS-->
-        <div class="element">
+        <section>
             <a href="pages/poor-things.html">
                 <img src="pages/images/Icons/Poor Things.jpg">
-                <h1>Pobres Criaturas</h1>
+                <h2>Pobres Criaturas</h2>
             </a>
-        </div>
+        </section>
         <!--VIDAS PASSADAS-->
-        <div class="element">
+        <section>
             <a href="pages/vidas-passadas.html">
                 <img src="pages/images/Icons/Vidas Passadas.jpg">
-                <h1>Vidas Passadas</h1>
+                <h2>Vidas Passadas</h2>
             </a>
-        </div>
-    </div>
+        </section>
+    </main>
 </body>
 </html>
