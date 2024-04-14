@@ -1,0 +1,126 @@
+a:link{text-decoration: none;}
+a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+a:active{text-decoration: none;}
+a{
+    color: #ddd;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
+    Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #000;
+    color: #ddd;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
+    Geneva, Verdana, sans-serif;
+}
+img{
+    width: 300px;
+    height: 450px;
+}
+header{
+    width: 100%;
+    max-width: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background: #000;
+    top: 0;
+    align-items: center;
+    position: sticky;
+    display: flex;
+    box-shadow: 0 4px 2px -2px rgb(42, 42, 42);
+    /* border: 3px solid red; */
+}
+header img{
+    width: 120px;
+    height: 120px;
+}
+header h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+main{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-top: 10px;
+    /* border: 3px solid red; */
+}
+section{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    text-align: center;
+}
+
+@media (min-width: 475px) {
+    header{
+        max-width: 475px;
+    }
+    main{
+        max-width: 475px;
+    }
+}
+
+@media (min-width: 640px) {
+    header{
+        max-width: 640px;
+    }
+    header h1{
+        margin-left: 10%;
+    }
+    main{
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    header{
+        max-width: 768px;
+    }
+    header h1{
+        margin-left: 15%;
+    }
+    main{
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    header{
+        max-width: 1024px;
+    }
+    header h1{
+        margin-left: 24%;
+    }
+    main{
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1280px) {
+    header{
+        max-width: 1280px;
+    }
+    header h1{
+        margin-left: 29%;
+    }
+    main{
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1536px) {
+    header{
+        max-width: 1536px;
+    }
+    header h1{
+        margin-left: 33%;
+    }
+    main{
+        max-width: 1536px;
+    }
+}

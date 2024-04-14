@@ -4,404 +4,333 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="icon" type="image/jpg" href="images/Icons/Logo.jpg">
+     <link rel="stylesheet" href="pagestyle.css">
      <title>Barbie</title>
      <style>
-          a:link{text-decoration: none;}
-          a:visited{text-decoration: none;}
-          a:hover{text-decoration: none;}
-          a:active{text-decoration: none;}
-          a{
-               color: #ddd;
-               font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
-               Geneva, Verdana, sans-serif;
-          }
-          body{
-               background-color: #000;
-               color: #ddd;
-               font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
-               Geneva, Verdana, sans-serif;
-          }
-          p{font-size: large;}
-          .cName{color: #888888;}
-          img{
-               width: 150px;
-               height: 200px;
-          }
-          header{
-               background: #000;
-               position: fixed;
-               width: 100%;
-               top: 0px;
-               left: 0px;
-               align-items: center;
-               justify-content: center;
-               display: flex;
-               box-shadow: 0 4px 2px -2px rgb(42, 42, 42);
-          }
-          header .logo{
-               width: 120px;
-               height: 120px;
-          }
-          header .titulo{
-               text-align: center;
-               text-transform: uppercase;
-          }
-          .imagemFilme{
-               width: 400px;
-               height: 600px;
-               display: block;
-               margin-top: 125px;
-               margin-left: auto;
-               margin-right: auto;
-          }
-          .scrollHorizontal{
-               margin-left: auto;
-               margin-right: auto;
-               display: flex;
-               overflow: auto;
-          }
-          .scrollHorizontal .element{
-               margin-right: 20px;
-               line-height: 20px;
-               text-align: center;
-          }
-          .scrollHorizontal .element .emmaMackey{width: 250px;}
-          .scrollHorizontal .element .kingsley{width: 250px;}
-          .scrollHorizontal .element .nicolaCoughlan{width: 250px;}
-          .scrollHorizontal .element .icon{
-               width: 100px;
-               height: 100px;
-          }
-          .scrollHorizontal .element2{
-               margin-right: 50px;
-               line-height: 20px;
-               text-align: center;
-          }
-          .scrollHorizontal .element2 .icon{
-               width: 100px;
-               height: 100px;
-          }
-    </style>
+          @media (min-width: 475px) {header h1{margin-left: 15%;}}
+          @media (min-width: 640px) {header h1{margin-left: 22%;}}
+          @media (min-width: 768px) {header h1{margin-left: 27%;}}
+          @media (min-width: 1024px) {header h1{margin-left: 33%;}}
+          @media (min-width: 1280px) {header h1{margin-left: 36%;}}
+          @media (min-width: 1536px) {header h1{margin-left: 38.5%;}}
+     </style>
 </head>
 <body>
      <header>
-          <nav>
-              <a href="../index.html"><img class="logo" src="images/Icons/Logo.jpg"></a>
-          </nav>
-          <h1 class="titulo">Barbie</h1>
+          <a href="../index.html"><img src="images/Icons/Logo.jpg"></a>
+          <h1>Barbie</h1>
      </header>
      <main>
+          <img id="filme" src="images/Icons/barbie.jpg">
+          <br>
           <!--SINOPSE-->
-          <article>
-               <img class="imagemFilme" src="images/Icons/barbie.jpg">
-               <br>
+          <section>
                <h2>Sinopse</h2>
-               <section>
-                    <p>Barbie começa a ter pensamentos estranhos e sua aparência muda, 
-                         então ela parte para o mundo real com Ken para tentar encontrar uma 
-                         solução e voltar a ser uma boneca perfeita.
-                    </p>
-               </section>
-          </article>
+               <p>Barbie começa a ter pensamentos estranhos e sua aparência muda, 
+                    então ela parte para o mundo real com Ken para tentar encontrar uma 
+                    solução e voltar a ser uma boneca perfeita.
+               </p>
+          </section>
           <br>
           <!--ELENCO-->
-          <article>
+          <section>
                <h2>Elenco</h2>
-               <section class="scrollHorizontal">
+               <div id="container">
                     <!--Margot Robbie-->
                     <div class="element">
                          <img src="images/Actors/Margot Robbie.jpg">
                          <h3>Margot Robbie</h3>
-                         <h3 class="cName">Barbie</h3>
+                         <h3 id="cName">Barbie</h3>
                     </div>
-               <!--Ryan Gosling-->
-               <div class="element">
-                    <img src="images/Actors/Ryan Gosling.jpg">
-                    <h3>Ryan Gosling</h3>
-                    <h3 class="cName">Ken</h3>
+                    <!--Ryan Gosling-->
+                    <div class="element">
+                         <img src="images/Actors/Ryan Gosling.jpg">
+                         <h3>Ryan Gosling</h3>
+                         <h3 id="cName">Ken</h3>
+                    </div>
+                    <!--Will Ferrell-->
+                    <div class="element">
+                         <img src="images/Actors/Will Ferrell.jpg">
+                         <h3>Will Ferrell</h3>
+                         <h3 id="cName">Mattel CEO</h3>
+                    </div>
+                    <!--Emma Mackey-->
+                    <div class="element">
+                         <img style="width: 250px;" src="images/Actors/Emma Mackey.jpg">
+                         <h3>Emma Mackey</h3>
+                         <h3 id="cName">Physicist Barbie</h3>
+                    </div>
+                    <!--Simu Liu-->
+                    <div class="element">
+                         <img src="images/Actors/Simu Liu.jpg">
+                         <h3>Simu Liu</h3>
+                         <h3 id="cName">Ken</h3>
+                    </div>
+                    <!--Hari Nef-->
+                    <div class="element">
+                         <img src="images/Actors/Hari Nef.jpg">
+                         <h3>Hari Nef</h3>
+                         <h3 id="cName">Dr. Barbie</h3>
+                    </div>
+                    <!--Kate McKinnon-->
+                    <div class="element">
+                         <img src="images/Actors/Kate McKinnon.jpg">
+                         <h3>Kate McKinnon</h3>
+                         <h3 id="cName">Weird Barbie</h3>
+                    </div>
+                    <!--Michael Cera-->
+                    <div class="element">
+                         <img src="images/Actors/Michael Cera.jpg">
+                         <h3>Michael Cera</h3>
+                         <h3 id="cName">Allan</h3>
+                    </div>
+                    <!--America Ferrera-->
+                    <div class="element">
+                         <img src="images/Actors/America Ferrera.jpg">
+                         <h3>America Ferrera</h3>
+                         <h3 id="cName">Gloria</h3>
+                    </div>
+                    <!--Issa Rae-->
+                    <div class="element">
+                         <img src="images/Actors/Issa Rae.jpg">
+                         <h3>Issa Rae</h3>
+                         <h3 id="cName">President Barbie</h3>
+                    </div>
+                    <!--Ariana Greenblatt-->
+                    <div class="element">
+                         <img src="images/Actors/Ariana Greenblatt.jpg">
+                         <h3>Ariana Greenblatt</h3>
+                         <h3 id="cName">Sasha</h3>
+                    </div>
+                    <!--Rhea Perlman-->
+                    <div class="element">
+                         <img src="images/Actors/Rhea Perlman.jpg">
+                         <h3>Rhea Perlman</h3>
+                         <h3 id="cName">Ruth Handler</h3>
+                    </div>
+                    <!--Emerald Fennell-->
+                    <div class="element">
+                         <img src="images/Actors/Emerald Fennell.jpg">
+                         <h3>Emerald Fennell</h3>
+                         <h3 id="cName">Midge</h3>
+                    </div>
+                    <!--Alexandra Shipp-->
+                    <div class="element">
+                         <img src="images/Actors/Alexandra Shipp.jpg">
+                         <h3>Alexandra Shipp</h3>
+                         <h3 id="cName">Writer Barbie</h3>
+                    </div>
+                    <!--Sharon Rooney-->
+                    <div class="element">
+                         <img src="images/Actors/Sharon Rooney.jpg">
+                         <h3>Sharon Rooney</h3>
+                    </div>
+                    <!--Connor Swindells-->
+                    <div class="element">
+                         <img src="images/Actors/Connor Swindells.jpg">
+                         <h3>Connor Swindells</h3>
+                         <h3 id="cName">Aaron Dinkins</h3>
+                    </div>
+                    <!--Kingsley Ben-Adir-->
+                    <div class="element">
+                         <img style="width: 250px;" src="images/Actors/Kingsley Ben-Adir.jpg">
+                         <h3>Kingsley Ben-Adir</h3>
+                    </div>
+                    <!--Ncuti Gatwa-->
+                    <div class="element">
+                         <img src="images/Actors/Ncuti Gatwa.jpg">
+                         <h3>Ncuti Gatwa</h3>
+                    </div>
+                    <!--Jamie Demetriou-->
+                    <div class="element">
+                         <img src="images/Actors/Jamie Demetriou.jpg">
+                         <h3>Jamie Demetriou</h3>
+                         <h3 id="cName">Mattel Executive #1</h3>
+                    </div>
+                    <!--Ritu Arya-->
+                    <div class="element">
+                         <img src="images/Actors/Ritu Arya.jpg">
+                         <h3>Ritu Arya</h3>
+                    </div>
+                    <!--Ruth Handler-->
+                    <div class="element">
+                         <img src="images/Actors/Ruth Handler.jpg">
+                         <h3>Ruth Handler</h3>
+                    </div>
+                    <!--Scott Evans-->
+                    <div class="element">
+                         <img src="images/Actors/Scott Evans.jpg">
+                         <h3>Scott Evans</h3>
+                    </div>
+                    <!--Nicola Coughlan-->
+                    <div class="element">
+                         <img style="width: 250px;" src="images/Actors/Nicola Coughlan.jpg">
+                         <h3>Nicola Coughlan</h3>
+                    </div>
+                    <!--Dua Lipa-->
+                    <div class="element">
+                         <img src="images/Actors/Dua Lipa.jpg">
+                         <h3>Dua Lipa</h3>
+                    </div>
+                    <!--John Cena-->
+                    <div class="element">
+                         <img src="images/Actors/John Cena.jpg">
+                         <h3>John Cena</h3>
+                    </div>
+                    <!--Ana Cruz Kayne-->
+                    <div class="element">
+                         <img src="images/Actors/Ana Cruz Kayne.jpg">
+                         <h3>Ana Cruz Kayne</h3>
+                    </div>
+                    <!--Luke Mullen-->
+                    <div class="element">
+                         <img src="images/Actors/Luke Mullen.jpg">
+                         <h3>Luke Mullen</h3>
+                         <h3 id="cName">Guy at the Beach #1</h3>
+                    </div>
+                    <!--Marisa Abela-->
+                    <div class="element">
+                         <img src="images/Actors/Marisa Abela.jpg">
+                         <h3>Marisa Abela</h3>
+                         <h3 id="cName">Teen Talk Barbie</h3>
+                    </div>
+                    <!--Helen Mirren-->
+                    <div class="element">
+                         <img src="images/Actors/Helen Mirren.jpg">
+                         <h3>Helen Mirren</h3>
+                         <h3 id="cName">Narrator</h3>
+                    </div>
+                    <!--Ann Roth-->
+                    <div class="element">
+                         <img src="images/Actors/Ann Roth.jpg">
+                         <h3>Ann Roth</h3>
+                    </div>
+                    <!--Ryan Piers Williams-->
+                    <div class="element">
+                         <img src="images/Actors/Ryan Piers Williams.jpg">
+                         <h3>Ryan Piers Williams</h3>
+                    </div>
+                    <!--Lucy Boynton-->
+                    <div class="element">
+                         <img src="images/Actors/Lucy Boynton.jpg">
+                         <h3>Lucy Boynton</h3>
+                         <h3 id="cName">Proust Barbie</h3>
+                    </div>
+                    <!--Rob Brydon-->
+                    <div class="element">
+                         <img src="images/Actors/Rob Brydon.jpg">
+                         <h3>Rob Brydon</h3>
+                         <h3 id="cName">Sugar Daddy Ken</h3>
+                    </div>
+                    <!--Asim Chaudhry-->
+                    <div class="element">
+                         <img src="images/Actors/Asim Chaudhry.jpg">
+                         <h3>Asim Chaudhry</h3>
+                    </div>
+                    <!--Tom Stourton-->
+                    <div class="element">
+                         <img src="images/Actors/Tom Stourton.jpg">
+                         <h3>Tom Stourton</h3>
+                         <h3 id="cName">Earring Magic Ken</h3>
+                    </div>
+                    <!--Will Merrick-->
+                    <div class="element">
+                         <img src="images/Actors/Will Merrick.jpg">
+                         <h3>Will Merrick</h3>
+                         <h3 id="cName">Young Mattel Executive</h3>
+                    </div>
+                    <!--Mette Towley-->
+                    <div class="element">
+                         <img src="images/Actors/Mette Towley.jpg">
+                         <h3>Mette Towley</h3>
+                         <h3 id="cName">Barbie Video Girl</h3>
+                    </div>
+                    <!--Annie Mumolo-->
+                    <div class="element">
+                         <img src="images/Actors/Annie Mumolo.jpg">
+                         <h3>Annie Mumolo</h3>
+                         <h3 id="cName">Mãe Ansiosa</h3>
+                    </div>
+                    <!--Ray Fearon-->
+                    <div class="element">
+                         <img src="images/Actors/Ray Fearon.jpg">
+                         <h3>Ray Fearon</h3>
+                         <h3 id="cName">Dan at the FBI</h3>
+                    </div>
+                    <!--Lauren Holt-->
+                    <div class="element">
+                         <img src="images/Actors/Lauren Holt.jpg">
+                         <h3>Lauren Holt</h3>
+                         <h3 id="cName">Time Mom</h3>
+                    </div>
+                    <!--Mitsuki Takahata-->
+                    <div class="element">
+                         <img src="images/Actors/Mitsuki Takahata.jpg">
+                         <h3>Mitsuki Takahata</h3>
+                    </div>
+                    <!--Saori Hayami-->
+                    <div class="element">
+                         <img src="images/Actors/Saori Hayami.jpg">
+                         <h3>Saori Hayami</h3>
+                    </div>
+                    <!--Ramzan Miah-->
+                    <div class="element">
+                         <img src="images/Actors/Ramzan Miah.jpg">
+                         <h3>Ramzan Miah</h3>
+                    </div>
+                    <!--Daisuke Ono-->
+                    <div class="element">
+                         <img src="images/Actors/Daisuke Ono.png">
+                         <h3>Daisuke Ono</h3>
+                    </div>
+                    <!--Romi Park-->
+                    <div class="element">
+                         <img src="images/Actors/Romi Park.jpg">
+                         <h3>Romi Park</h3>
+                    </div>
+                    <!--Junichi Suwabe-->
+                    <div class="element">
+                         <img src="images/Actors/Junichi Suwabe.jpg">
+                         <h3>Junichi Suwabe</h3>
+                    </div>
+                    <!--Hiro Shimono-->
+                    <div class="element">
+                         <img src="images/Actors/Hiro Shimono.jpg">
+                         <h3>Hiro Shimono</h3>
+                    </div>
+                    <!--Miyuki Sawashiro-->
+                    <div class="element">
+                         <img src="images/Actors/Miyuki Sawashiro.jpg">
+                         <h3>Miyuki Sawashiro</h3>
+                    </div>
+                    <!--Maaya Sakamoto-->
+                    <div class="element">
+                         <img src="images/Actors/Maaya Sakamoto.jpg">
+                         <h3>Maaya Sakamoto</h3>
+                    </div>
+                    <!--Shunsuke Takeuchi-->
+                    <div class="element">
+                         <img src="images/Actors/Shunsuke Takeuchi.jpeg">
+                         <h3>Shunsuke Takeuchi</h3>
+                    </div>
+                    <!--Ryotaro Okiayu-->
+                    <div class="element">
+                         <img src="images/Actors/Ryotaro Okiayu.jpg">
+                         <h3>Ryotaro Okiayu</h3>
+                    </div>
                </div>
-               <!--Will Ferrell-->
-               <div class="element">
-                    <img src="images/Actors/Will Ferrell.jpg">
-                    <h3>Will Ferrell</h3>
-                    <h3 class="cName">Mattel CEO</h3>
-               </div>
-               <!--Emma Mackey-->
-               <div class="element">
-                    <img class="emmaMackey" src="images/Actors/Emma Mackey.jpg">
-                    <h3>Emma Mackey</h3>
-                    <h3 class="cName">Physicist Barbie</h3>
-               </div>
-               <!--Simu Liu-->
-               <div class="element">
-                    <img src="images/Actors/Simu Liu.jpg">
-                    <h3>Simu Liu</h3>
-                    <h3 class="cName">Ken</h3>
-               </div>
-               <!--Hari Nef-->
-               <div class="element">
-                    <img src="images/Actors/Hari Nef.jpg">
-                    <h3>Hari Nef</h3>
-                    <h3 class="cName">Dr. Barbie</h3>
-               </div>
-               <!--Kate McKinnon-->
-               <div class="element">
-                    <img src="images/Actors/Kate McKinnon.jpg">
-                    <h3>Kate McKinnon</h3>
-                    <h3 class="cName">Weird Barbie</h3>
-               </div>
-               <!--Michael Cera-->
-               <div class="element">
-                    <img src="images/Actors/Michael Cera.jpg">
-                    <h3>Michael Cera</h3>
-                    <h3 class="cName">Allan</h3>
-               </div>
-               <!--America Ferrera-->
-               <div class="element">
-                    <img src="images/Actors/America Ferrera.jpg">
-                    <h3>America Ferrera</h3>
-                    <h3 class="cName">Gloria</h3>
-               </div>
-               <!--Issa Rae-->
-               <div class="element">
-                    <img src="images/Actors/Issa Rae.jpg">
-                    <h3>Issa Rae</h3>
-                    <h3 class="cName">President Barbie</h3>
-               </div>
-               <!--Ariana Greenblatt-->
-               <div class="element">
-                    <img src="images/Actors/Ariana Greenblatt.jpg">
-                    <h3>Ariana Greenblatt</h3>
-                    <h3 class="cName">Sasha</h3>
-               </div>
-               <!--Rhea Perlman-->
-               <div class="element">
-                    <img src="images/Actors/Rhea Perlman.jpg">
-                    <h3>Rhea Perlman</h3>
-                    <h3 class="cName">Ruth Handler</h3>
-               </div>
-               <!--Emerald Fennell-->
-               <div class="element">
-                    <img src="images/Actors/Emerald Fennell.jpg">
-                    <h3>Emerald Fennell</h3>
-                    <h3 class="cName">Midge</h3>
-               </div>
-               <!--Alexandra Shipp-->
-               <div class="element">
-                    <img src="images/Actors/Alexandra Shipp.jpg">
-                    <h3>Alexandra Shipp</h3>
-                    <h3 class="cName">Writer Barbie</h3>
-               </div>
-               <!--Sharon Rooney-->
-               <div class="element">
-                    <img src="images/Actors/Sharon Rooney.jpg">
-                    <h3>Sharon Rooney</h3>
-               </div>
-               <!--Connor Swindells-->
-               <div class="element">
-                    <img src="images/Actors/Connor Swindells.jpg">
-                    <h3>Connor Swindells</h3>
-                    <h3 class="cName">Aaron Dinkins</h3>
-               </div>
-               <!--Kingsley Ben-Adir-->
-               <div class="element">
-                    <img class="kingsley" src="images/Actors/Kingsley Ben-Adir.jpg">
-                    <h3>Kingsley Ben-Adir</h3>
-               </div>
-               <!--Ncuti Gatwa-->
-               <div class="element">
-                    <img src="images/Actors/Ncuti Gatwa.jpg">
-                    <h3>Ncuti Gatwa</h3>
-               </div>
-               <!--Jamie Demetriou-->
-               <div class="element">
-                    <img src="images/Actors/Jamie Demetriou.jpg">
-                    <h3>Jamie Demetriou</h3>
-                    <h3 class="cName">Mattel Executive #1</h3>
-               </div>
-               <!--Ritu Arya-->
-               <div class="element">
-                    <img src="images/Actors/Ritu Arya.jpg">
-                    <h3>Ritu Arya</h3>
-               </div>
-               <!--Ruth Handler-->
-               <div class="element">
-                    <img src="images/Actors/Ruth Handler.jpg">
-                    <h3>Ruth Handler</h3>
-               </div>
-               <!--Scott Evans-->
-               <div class="element">
-                    <img src="images/Actors/Scott Evans.jpg">
-                    <h3>Scott Evans</h3>
-               </div>
-               <!--Nicola Coughlan-->
-               <div class="element">
-                    <img class="nicolaCoughlan" src="images/Actors/Nicola Coughlan.jpg">
-                    <h3>Nicola Coughlan</h3>
-               </div>
-               <!--Dua Lipa-->
-               <div class="element">
-                    <img src="images/Actors/Dua Lipa.jpg">
-                    <h3>Dua Lipa</h3>
-               </div>
-               <!--John Cena-->
-               <div class="element">
-                    <img src="images/Actors/John Cena.jpg">
-                    <h3>John Cena</h3>
-               </div>
-               <!--Ana Cruz Kayne-->
-               <div class="element">
-                    <img src="images/Actors/Ana Cruz Kayne.jpg">
-                    <h3>Ana Cruz Kayne</h3>
-               </div>
-               <!--Luke Mullen-->
-               <div class="element">
-                    <img src="images/Actors/Luke Mullen.jpg">
-                    <h3>Luke Mullen</h3>
-                    <h3 class="cName">Guy at the Beach #1</h3>
-               </div>
-               <!--Marisa Abela-->
-               <div class="element">
-                    <img src="images/Actors/Marisa Abela.jpg">
-                    <h3>Marisa Abela</h3>
-                    <h3 class="cName">Teen Talk Barbie</h3>
-               </div>
-               <!--Helen Mirren-->
-               <div class="element">
-                    <img src="images/Actors/Helen Mirren.jpg">
-                    <h3>Helen Mirren</h3>
-                    <h3 class="cName">Narrator</h3>
-               </div>
-               <!--Ann Roth-->
-               <div class="element">
-                    <img src="images/Actors/Ann Roth.jpg">
-                    <h3>Ann Roth</h3>
-               </div>
-               <!--Ryan Piers Williams-->
-               <div class="element">
-                    <img src="images/Actors/Ryan Piers Williams.jpg">
-                    <h3>Ryan Piers Williams</h3>
-               </div>
-               <!--Lucy Boynton-->
-               <div class="element">
-                    <img src="images/Actors/Lucy Boynton.jpg">
-                    <h3>Lucy Boynton</h3>
-                    <h3 class="cName">Proust Barbie</h3>
-               </div>
-               <!--Rob Brydon-->
-               <div class="element">
-                    <img src="images/Actors/Rob Brydon.jpg">
-                    <h3>Rob Brydon</h3>
-                    <h3 class="cName">Sugar Daddy Ken</h3>
-               </div>
-               <!--Asim Chaudhry-->
-               <div class="element">
-                    <img src="images/Actors/Asim Chaudhry.jpg">
-                    <h3>Asim Chaudhry</h3>
-               </div>
-               <!--Tom Stourton-->
-               <div class="element">
-                    <img src="images/Actors/Tom Stourton.jpg">
-                    <h3>Tom Stourton</h3>
-                    <h3 class="cName">Earring Magic Ken</h3>
-               </div>
-               <!--Will Merrick-->
-               <div class="element">
-                    <img src="images/Actors/Will Merrick.jpg">
-                    <h3>Will Merrick</h3>
-                    <h3 class="cName">Young Mattel Executive</h3>
-               </div>
-               <!--Mette Towley-->
-               <div class="element">
-                    <img src="images/Actors/Mette Towley.jpg">
-                    <h3>Mette Towley</h3>
-                    <h3 class="cName">Barbie Video Girl</h3>
-               </div>
-               <!--Annie Mumolo-->
-               <div class="element">
-                    <img src="images/Actors/Annie Mumolo.jpg">
-                    <h3>Annie Mumolo</h3>
-                    <h3 class="cName">Mãe Ansiosa</h3>
-               </div>
-               <!--Ray Fearon-->
-               <div class="element">
-                    <img src="images/Actors/Ray Fearon.jpg">
-                    <h3>Ray Fearon</h3>
-                    <h3 class="cName">Dan at the FBI</h3>
-               </div>
-               <!--Lauren Holt-->
-               <div class="element">
-                    <img src="images/Actors/Lauren Holt.jpg">
-                    <h3>Lauren Holt</h3>
-                    <h3 class="cName">Time Mom</h3>
-               </div>
-               <!--Mitsuki Takahata-->
-               <div class="element">
-                    <img src="images/Actors/Mitsuki Takahata.jpg">
-                    <h3>Mitsuki Takahata</h3>
-               </div>
-               <!--Saori Hayami-->
-               <div class="element">
-                    <img src="images/Actors/Saori Hayami.jpg">
-                    <h3>Saori Hayami</h3>
-               </div>
-               <!--Ramzan Miah-->
-               <div class="element">
-                    <img src="images/Actors/Ramzan Miah.jpg">
-                    <h3>Ramzan Miah</h3>
-               </div>
-               <!--Daisuke Ono-->
-               <div class="element">
-                    <img src="images/Actors/Daisuke Ono.png">
-                    <h3>Daisuke Ono</h3>
-               </div>
-               <!--Romi Park-->
-               <div class="element">
-                    <img src="images/Actors/Romi Park.jpg">
-                    <h3>Romi Park</h3>
-               </div>
-               <!--Junichi Suwabe-->
-               <div class="element">
-                    <img src="images/Actors/Junichi Suwabe.jpg">
-                    <h3>Junichi Suwabe</h3>
-               </div>
-               <!--Hiro Shimono-->
-               <div class="element">
-                    <img src="images/Actors/Hiro Shimono.jpg">
-                    <h3>Hiro Shimono</h3>
-               </div>
-               <!--Miyuki Sawashiro-->
-               <div class="element">
-                    <img src="images/Actors/Miyuki Sawashiro.jpg">
-                    <h3>Miyuki Sawashiro</h3>
-               </div>
-               <!--Maaya Sakamoto-->
-               <div class="element">
-                    <img src="images/Actors/Maaya Sakamoto.jpg">
-                    <h3>Maaya Sakamoto</h3>
-               </div>
-               <!--Shunsuke Takeuchi-->
-               <div class="element">
-                    <img src="images/Actors/Shunsuke Takeuchi.jpeg">
-                    <h3>Shunsuke Takeuchi</h3>
-               </div>
-               <!--Ryotaro Okiayu-->
-               <div class="element">
-                    <img src="images/Actors/Ryotaro Okiayu.jpg">
-                    <h3>Ryotaro Okiayu</h3>
-               </div>
-          </article>
+          </section>
           <br>
-          <article>
-               <!--ONDE ASSISTIR-->
+          <!--ONDE ASSISTIR-->
+          <section>
                <h2>Onde Assistir</h2>
-               <section class="scrollHorizontal">
+               <div id="container">
                     <!--Max-->
                     <div class="element2">
                          <a href="https://www.max.com/movies/80bc4915-c826-499f-9961-b422b17559b6">
                               <img class="icon" src="images/Icons/max_40x40.png">
                               <h3>Max</h3>
-                              <h3 class="cName">Assinatura</h3>
+                              <h3 id="cName">Assinatura</h3>
                          </a>
                     </div>
                     <!--Amazon Prime Video-->
@@ -409,7 +338,7 @@
                          <a href="https://www.primevideo.com/-/pt/detail/0GKNEEOK90DYICABAGL9ZQTBTO/ref=atv_dp_amz_c_TS8274d9_1_1?jic=16%7CCgNhbGwSA2FsbA%3D%3D">
                               <img class="icon" src="images/Icons/amazon_prime_40x40.png">
                               <h3>Amazon Prime Video</h3>
-                              <h3 class="cName">Assinatura Premium</h3>
+                              <h3 id="cName">Assinatura Premium</h3>
                          </a>
                     </div>
                     <!--Apple Tv-->
@@ -417,7 +346,7 @@
                          <a href="https://tv.apple.com/br/movie/barbie/umc.cmc.3u6lep5fj0lq4f4lvvrntr9rh?action=play">
                               <img class="icon" src="images/Icons/apple_tv_plus_40x40.png">
                               <h3>Apple Tv</h3>
-                              <h3 class="cName">A partir de R$11,90</h3>
+                              <h3 id="cName">A partir de R$11,90</h3>
                          </a>
                     </div>
                     <!--Google Play Filmes-->
@@ -425,11 +354,11 @@
                          <a href="https://play.google.com/store/movies/details?id=lh30mfj86Co.P">
                               <img class="icon" src="images/Icons/googleplaytvandmovies_40x40.png">
                               <h3>Google Play Movies</h3>
-                              <h3 class="cName">A partir de R$14,90</h3>
+                              <h3 id="cName">A partir de R$14,90</h3>
                          </a>
                     </div>
-               </section>
-          </article>
+               </div>
+          </section>
      </main>
 </body>
 </html>

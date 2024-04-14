@@ -1,0 +1,151 @@
+a:link{text-decoration: none;}
+a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+a:active{text-decoration: none;}
+a{
+    color: #ddd;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
+    Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #000;
+    color: #ddd;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
+    Geneva, Verdana, sans-serif;
+}
+
+h2{font-size: xx-large;}
+#cName{color: #888888;}
+p{font-size: large;}
+img{
+    width: 150px;
+    height: 200px;
+}
+
+#container{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    overflow: auto;
+}
+#container .element{
+    margin-right: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+#container .element2{
+    margin-right: 50px;
+    line-height: 20px;
+    text-align: center;
+}
+#container .element2 .icon{
+    width: 100px;
+    height: 100px;
+}
+
+#filme{
+    width: 400px;
+    height: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    width: 100%;
+    max-width: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background: #000;
+    top: 0;
+    align-items: center;
+    position: sticky;
+    display: flex;
+    box-shadow: 0 4px 2px -2px rgb(42, 42, 42);
+    /* border: 3px solid red; */
+}
+header img{
+    width: 120px;
+    height: 120px;
+}
+header h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-top: 10px;
+    /* border: 3px solid red; */
+}
+
+@media (min-width: 475px) {
+    header{
+        max-width: 475px;
+    }
+    main{
+        max-width: 475px;
+    }
+}
+
+@media (min-width: 640px) {
+    header{
+        max-width: 640px;
+    }
+    main{
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    header{
+        max-width: 768px;
+    }
+    main{
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    header{
+        max-width: 1024px;
+    }
+    main{
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1280px) {
+    header{
+        max-width: 1280px;
+    }
+    main{
+        max-width: 1280px;
+    }
+    #container{
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    #container .element{
+        margin-right: 50px;
+    }
+}
+
+@media (min-width: 1536px) {
+    header{
+        max-width: 1536px;
+    }
+    main{
+        max-width: 1536px;
+    }
+    #container{
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        gap: 50px 50px;
+    }
+}

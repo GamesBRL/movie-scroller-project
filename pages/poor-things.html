@@ -4,86 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/jpg" href="images/Icons/Logo.jpg">
+    <link rel="stylesheet" href="pagestyle.css">
     <title>Poor Things</title>
     <style>
-        a:link{text-decoration: none;}
-        a:visited{text-decoration: none;}
-        a:hover{text-decoration: none;}
-        a:active{text-decoration: none;}
-        a{
-            color: #ddd;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
-            Geneva, Verdana, sans-serif;
-        }
-        body{
-            background-color: #000;
-            color: #ddd;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
-            Geneva, Verdana, sans-serif;
-        }
-        p{font-size: large;}
-        .cName{color: #888888;}
-        img{
-            width: 150px;
-            height: 200px;
-        }
-        header{
-            background: #000;
-            position: fixed;
-            width: 100%;
-            top: 0px;
-            left: 0px;
-            align-items: center;
-            justify-content: center;
-            display: flex;
-            box-shadow: 0 4px 2px -2px rgb(42, 42, 42);
-        }
-        header .logo{
-            margin-left: auto;
-            width: 120px;
-            height: 120px;
-        }
-        header .titulo{
-            text-align: center;
-            text-transform: uppercase;
-        }
-        .imagemFilme{
-            width: 400px;
-            height: 600px;
-            display: block;
-            margin-top: 125px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .scrollHorizontal{
-            margin-left: auto;
-            margin-right: auto;
-            display: flex;
-            overflow: auto;
-        }
-        .scrollHorizontal .element{
-            margin-right: 20px;
-            line-height: 20px;
-            text-align: center;
-        }
-        .scrollHorizontal .element .carminho{width: 250px;}
-        .scrollHorizontal .element .jeremyWheeler{width: 200px;}
-        .scrollHorizontal .element .attilaDobai{width: 300px;}
-        .scrollHorizontal .element .tamasSzabo{width: 250px;}
-        .scrollHorizontal .element .istvan{width: 200px;}
-        .scrollHorizontal .element2{
-            margin-right: 50px;
-            line-height: 20px;
-            text-align: center;
-        }
-        .scrollHorizontal .element .icon{
-            width: 100px;
-            height: 100px;
-        }
-        .scrollHorizontal .element2 .icon{
-            width: 100px;
-            height: 100px;
-        }
+        @media (min-width: 640px) {header h1{margin-left: 6%;}}
+        @media (min-width: 768px) {header h1{margin-left: 11.5%;}}
+        @media (min-width: 1024px) {header h1{margin-left: 22%;}}
+        @media (min-width: 1280px) {header h1{margin-left: 28%;}}
+        @media (min-width: 1536px) {header h1{margin-left: 31.5%;}}
     </style>
 </head>
 <body>
@@ -94,52 +22,50 @@
         <h1 class="titulo">Pobres Criaturas</h1>
     </header>
     <main>
+        <img id="filme" src="images/Icons/Poor Things.jpg">
+        <br>
         <!--SINOPSE-->
-        <article>
-            <img class="imagemFilme" src="images/Icons/Poor Things.jpg">
-            <br>
+        <section>
             <h2>Sinopse</h2>
-            <section>
-                <p>A jovem Bella Baxter é trazida de volta à vida pelo cientista Dr. Godwin Baxter. 
-                    Querendo ver mais do mundo, ela foge com um advogado e viaja pelos continentes. 
-                    Livre dos preconceitos de sua época, Bella exige igualdade e libertação.
-                </p>
-            </section>
-        </article>
+            <p>A jovem Bella Baxter é trazida de volta à vida pelo cientista Dr. Godwin Baxter. 
+                Querendo ver mais do mundo, ela foge com um advogado e viaja pelos continentes. 
+                Livre dos preconceitos de sua época, Bella exige igualdade e libertação.
+            </p>
+        </section>
         <br>
         <!--ELENCO-->
-        <article>
+        <section>
             <h2>Elenco</h2>
-            <section class="scrollHorizontal">
+            <div id="container">
                 <!--Emma Stone-->
                 <div class="element">
                     <img src="images/Actors/Emma Stone.jpg">
                     <h3>Emma Stone</h3>
-                    <h3 class="cName">Bella Baxter</h3>
+                    <h3 id="cName">Bella Baxter</h3>
                 </div>
                 <!--Mark Ruffalo-->
                 <div class="element">
                     <img src="images/Actors/Mark Ruffalo.jpg">
                     <h3>Mark Ruffalo</h3>
-                    <h3 class="cName">Duncan Wedderburn</h3>
+                    <h3 id="cName">Duncan Wedderburn</h3>
                 </div>
                 <!--Willem Dafoe-->
                 <div class="element">
                     <img src="images/Actors/Willem Dafoe.jpg">
                     <h3>Willem Dafoe</h3>
-                    <h3 class="cName">Dr. Godwin Baxter</h3>
+                    <h3 id="cName">Dr. Godwin Baxter</h3>
                 </div>
                 <!--Margaret Qualley-->
                 <div class="element">
                     <img src="images/Actors/Margaret Qualley.jpg">
                     <h3>Margaret Qualley</h3>
-                    <h3 class="cName">Felicity</h3>
+                    <h3 id="cName">Felicity</h3>
                 </div>
                 <!--Ramy Youssef-->
                 <div class="element">
                     <img src="images/Actors/Ramy Youssef.jpg">
                     <h3>Ramy Youssef</h3>
-                    <h3 class="cName">Max McCandles</h3>
+                    <h3 id="cName">Max McCandles</h3>
                 </div>
                 <!--Laurent Borel-->
                 <div class="element">
@@ -150,31 +76,31 @@
                 <div class="element">
                     <img src="images/Actors/Christopher Abbott.jpg">
                     <h3>Christopher Abbott</h3>
-                    <h3 class="cName">Alfie Blessington</h3>
+                    <h3 id="cName">Alfie Blessington</h3>
                 </div>
                 <!--Kathryn Hunter-->
                 <div class="element">
                     <img src="images/Actors/Kathryn Hunter.jpg">
                     <h3>Kathryn Hunter</h3>
-                    <h3 class="cName">Swiney</h3>
+                    <h3 id="cName">Swiney</h3>
                 </div>
                 <!--Suzy Bemba-->
                 <div class="element">
                     <img src="images/Actors/Suzy Bemba.jpg">
                     <h3>Suzy Bemba</h3>
-                    <h3 class="cName">Toinette</h3>
+                    <h3 id="cName">Toinette</h3>
                 </div>
                 <!--Jerrod Carmichael-->
                 <div class="element">
                     <img src="images/Actors/Jerrod Carmichael.jpg">
                     <h3>Jerrod Carmichael</h3>
-                    <h3 class="cName">Harry Astley</h3>
+                    <h3 id="cName">Harry Astley</h3>
                 </div>
                 <!--Hanna Schygulla-->
                 <div class="element">
                     <img src="images/Actors/Hanna Schygulla.jpg">
                     <h3>Hanna Schygulla</h3>
-                    <h3 class="cName">Martha Von Kurtzroc</h3>
+                    <h3 id="cName">Martha Von Kurtzroc</h3>
                 </div>
                 <!--Olivia Colman-->
                 <div class="element">
@@ -185,7 +111,7 @@
                 <div class="element">
                     <img src="images/Actors/Vicki Pepperdine.jpg">
                     <h3>Vicki Pepperdine</h3>
-                    <h3 class="cName">Mrs. Prim</h3>
+                    <h3 id="cName">Mrs. Prim</h3>
                 </div>
                 <!--Rachel Weisz-->
                 <div class="element">
@@ -194,56 +120,56 @@
                 </div>
                 <!--Carminho-->
                 <div class="element">
-                    <img class="carminho" src="images/Actors/Carminho.jpg">
+                    <img style="width: 250px;" src="images/Actors/Carminho.jpg">
                     <h3>Carminho</h3>
-                    <h3 class="cName">Fado Singing Woman</h3>
+                    <h3 id="cName">Fado Singing Woman</h3>
                 </div>
                 <!--Damien Bonnard-->
                 <div class="element">
                     <img src="images/Actors/Damien Bonnard.jpg">
                     <h3>Damien Bonnard</h3>
-                    <h3 class="cName">Father</h3>
+                    <h3 id="cName">Father</h3>
                 </div>
                 <!--Jerskin Fendrix-->
                 <div class="element">
                     <img src="images/Actors/Jerskin Fendrix.jpg">
                     <h3>Jerskin Fendrix</h3>
-                    <h3 class="cName">Lisbon Restaurant Musician</h3>
+                    <h3 id="cName">Lisbon Restaurant Musician</h3>
                 </div>
                 <!--Jeremy Wheeler-->
                 <div class="element">
-                    <img class="jeremyWheeler" src="images/Actors/Jeremy Wheeler.jpg">
+                    <img style="width: 200px;" src="images/Actors/Jeremy Wheeler.jpg">
                     <h3>Jeremy Wheeler</h3>
                 </div>
                 <!--Tom Stourton-->
                 <div class="element">
                     <img src="images/Actors/Tom Stourton.jpg">
                     <h3>Tom Stourton</h3>
-                    <h3 class="cName">Steward</h3>
+                    <h3 id="cName">Steward</h3>
                 </div>
                 <!--Jack Barton-->
                 <div class="element">
                     <img src="images/Actors/Jack Barton.jpg">
                     <h3>Jack Barton</h3>
-                    <h3 class="cName">Fop 1</h3>
+                    <h3 id="cName">Fop 1</h3>
                 </div>
                 <!--Charlie Hiscock-->
                 <div class="element">
                     <img src="images/Actors/Charlie Hiscock.jpg">
                     <h3>Charlie Hiscock</h3>
-                    <h3 class="cName">Fop 2</h3>
+                    <h3 id="cName">Fop 2</h3>
                 </div>
                 <!--Hubert Benhamdine-->
                 <div class="element">
                     <img src="images/Actors/Hubert Benhamdine.jpg">
                     <h3>Hubert Benhamdine</h3>
-                    <h3 class="cName">Handsome Priest</h3>
+                    <h3 id="cName">Handsome Priest</h3>
                 </div>
                 <!--Vivienne Soan-->
                 <div class="element">
                     <img src="images/Actors/Vivienne Soan.jpg">
                     <h3>Vivienne Soan</h3>
-                    <h3 class="cName">Duchess</h3>
+                    <h3 id="cName">Duchess</h3>
                 </div>
                 <!--Keeley Forsyth-->
                 <div class="element">
@@ -259,7 +185,7 @@
                 <div class="element">
                     <img src="images/Actors/Mellanie Hubert.jpg">
                     <h3>Mellanie Hubert</h3>
-                    <h3 class="cName">Julia Jennings</h3>
+                    <h3 id="cName">Julia Jennings</h3>
                 </div>
                 <!--Andrew Hefler-->
                 <div class="element">
@@ -283,18 +209,18 @@
                 </div>
                 <!--Attila Dobai-->
                 <div class="element">
-                    <img class="attilaDobai" src="images/Actors/Attila Dobai.jpg">
+                    <img style="width: 250px;" src="images/Actors/Attila Dobai.jpg">
                     <h3>Attila Dobai</h3>
-                    <h3 class="cName">Hapless Student</h3>
+                    <h3 id="cName">Hapless Student</h3>
                 </div>
                 <!--Tamás Szabó Sipos-->
                 <div class="element">
-                    <img class="tamasSzabo" src="images/Actors/Tamás Szabó Sipos.jpg">
+                    <img style="width: 300px;" src="images/Actors/Tamás Szabó Sipos.jpg">
                     <h3>Tamás Szabó Sipos</h3>
                 </div>
                 <!--István Gőz-->
                 <div class="element">
-                    <img class="istvan" src="images/Actors/István Gőz.jpg">
+                    <img style="width: 250px;" src="images/Actors/István Gőz.jpg">
                     <h3>István Gőz</h3>
                 </div>
                 <!--Laurent Winkler-->
@@ -311,7 +237,7 @@
                 <div class="element">
                     <img src="images/Actors/Wayne Brett.jpg">
                     <h3>Wayne Brett</h3>
-                    <h3 class="cName">Priest</h3>
+                    <h3 id="cName">Priest</h3>
                 </div>
                 <!--Roderick Hill-->
                 <div class="element">
@@ -327,24 +253,25 @@
                 <div class="element">
                     <img src="images/Actors/Emma Hindle.jpg">
                     <h3>Emma Hindle</h3>
-                    <h3 class="cName">Woman with a Kid in London Street</h3>
+                    <h3 id="cName">Woman with a Kid in London Street</h3>
                 </div>
-            </section>
-        </article>
+            </div>
+        </section>
+        <br>
         <!--ONDE ASSISTIR-->
-        <article>
+        <section>
             <h2>Onde Assistir</h2>
-            <section class="scrollHorizontal">
+            <div id="container">
                 <!--Star Plus-->
                 <div class="element2">
                     <a href="https://www.starplus.com/video/0bfc3435-ed8b-4048-b74f-54c84a753e48?distributionPartner=google">
                         <img class="icon" src="images/Icons/star_plus_40x40.png">
                         <h3>Star Plus</h3>
-                        <h3 class="cName">Assinatura</h3>
+                        <h3 id="cName">Assinatura</h3>
                     </a>
                 </div>
-            </section>
-        </article>
+            </div>
+        </section>
     </main>
 </body>
 </html>

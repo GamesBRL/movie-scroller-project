@@ -4,84 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/jpg" href="images/Icons/Logo.jpg">
+    <link rel="stylesheet" href="pagestyle.css">
     <title>Vidas Passadas</title>
     <style>
-        a:link{text-decoration: none;}
-        a:visited{text-decoration: none;}
-        a:hover{text-decoration: none;}
-        a:active{text-decoration: none;}
-        a{
-             color: #ddd;
-             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
-             Geneva, Verdana, sans-serif;
-        }
-        body{
-             background-color: #000;
-             color: #ddd;
-             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
-             Geneva, Verdana, sans-serif;
-        }
-        p{font-size: large;}
-        .cName{color: #888888;}
-        img{
-             width: 150px;
-             height: 200px;
-        }
-        header{
-             background: #000;
-             position: fixed;
-             width: 100%;
-             top: 0px;
-             left: 0px;
-             align-items: center;
-             justify-content: center;
-             display: flex;
-             box-shadow: 0 4px 2px -2px rgb(42, 42, 42);
-        }
-        header .logo{
-             width: 120px;
-             height: 120px;
-        }
-        header .titulo{
-             text-align: center;
-             text-transform: uppercase;
-        }
-        .imagemFilme{
-             width: 400px;
-             height: 600px;
-             display: block;
-             margin-top: 125px;
-             margin-left: auto;
-             margin-right: auto;
-        }
-        .scrollHorizontal{
-             margin-left: auto;
-             margin-right: auto;
-             display: flex;
-             overflow: auto;
-        }
-        .scrollHorizontal .element{
-             margin-right: 20px;
-             line-height: 20px;
-             text-align: center;
-        }
-        .scrollHorizontal .element .jackAlberts{width: 250px;}
-        .scrollHorizontal .element .lisaDennett{width: 225px;}
-        .scrollHorizontal .element .leemSeung{width: 250px;}
-        .scrollHorizontal .element .wonYoung{width: 250px;}
-        .scrollHorizontal .element .icon{
-             width: 100px;
-             height: 100px;
-        }
-        .scrollHorizontal .element2{
-             margin-right: 50px;
-             line-height: 20px;
-             text-align: center;
-        }
-        .scrollHorizontal .element2 .icon{
-             width: 100px;
-             height: 100px;
-        }
+        @media (min-width: 640px) {header h1{margin-left: 9%;}}
+        @media (min-width: 768px) {header h1{margin-left: 15%;}}
+        @media (min-width: 1024px) {header h1{margin-left: 24%;}}
+        @media (min-width: 1280px) {header h1{margin-left: 29.5%;}}
+        @media (min-width: 1536px) {header h1{margin-left: 32.8%;}}
     </style>
 </head>
 <body>
@@ -92,40 +22,38 @@
         <h1 class="titulo">Vidas Passadas</h1>
     </header>
     <main>
+        <img id="filme" src="images/Icons/Vidas Passadas.jpg">
+        <br>
         <!--SINOPSE-->
-        <article>
-            <img class="imagemFilme" src="images/Icons/Vidas Passadas.jpg">
-            <br>
+        <section>
             <h2>Sinopse</h2>
-            <section>
-                <p>Nora e Hae Sung, duas amigas de infância profundamente conectadas, se separam depois de uma mudança. 
-                    Duas décadas depois, elas se reencontram na cidade de Nova York para uma semana fatídica enquanto 
-                    confrontam noções de destino, amor e escolhas.
-                </p>
-            </section>
-        </article>
+            <p>Nora e Hae Sung, duas amigas de infância profundamente conectadas, se separam depois de uma mudança. 
+                Duas décadas depois, elas se reencontram na cidade de Nova York para uma semana fatídica enquanto 
+                confrontam noções de destino, amor e escolhas.
+            </p>
+        </section>
         <br>
         <!--ELENCO-->
-        <article>
+        <section>
             <h2>Elenco</h2>
-            <section class="scrollHorizontal">
+            <div id="container">
                 <!--Greta Lee-->
                 <div class="element">
                     <img src="images/Actors/Greta Lee.jpg">
                     <h3>Greta Lee</h3>
-                    <h3 class="cName">Nora</h3>
+                    <h3 id="cName">Nora</h3>
                 </div>
                 <!--Teo Yoo-->
                 <div class="element">
                     <img src="images/Actors/Teo Yoo.jpg">
                     <h3>Teo Yoo</h3>
-                    <h3 class="cName">Hae Sung</h3>
+                    <h3 id="cName">Hae Sung</h3>
                 </div>
                 <!--John Magaro-->
                 <div class="element">
                     <img src="images/Actors/John Magaro.jpg">
                     <h3>John Magaro</h3>
-                    <h3 class="cName">Arthur</h3>
+                    <h3 id="cName">Arthur</h3>
                 </div>
                 <!--Isaac Powell-->
                 <div class="element">
@@ -136,31 +64,31 @@
                 <div class="element">
                     <img src="images/Actors/Kristen Sieh.jpg">
                     <h3>Kristen Sieh</h3>
-                    <h3 class="cName">Heather</h3>
+                    <h3 id="cName">Heather</h3>
                 </div>
                 <!--Chang Kiha-->
                 <div class="element">
                     <img src="images/Actors/Chang Kiha.jpg">
                     <h3>Chang Kiha</h3>
-                    <h3 class="cName">Hae Sung's Friend 1</h3>
+                    <h3 id="cName">Hae Sung's Friend 1</h3>
                 </div>
                 <!--Chase Sui Wonders-->
                 <div class="element">
                     <img src="images/Actors/Chase Sui Wonders.jpg">
                     <h3>Chase Sui Wonders</h3>
-                    <h3 class="cName">Girl</h3>
+                    <h3 id="cName">Girl</h3>
                 </div>
                 <!--Won-Young Choi-->
                 <div class="element">
-                    <img class="wonYoung" src="images/Actors/Won-Young Choi.jpg">
+                    <img style="width: 250px" src="images/Actors/Won-Young Choi.jpg">
                     <h3>Won-Young Choi</h3>
-                    <h3 class="cName">Nora's Dad</h3>
+                    <h3 id="cName">Nora's Dad</h3>
                 </div>
                 <!--Yoon Ji-hye-->
                 <div class="element">
                     <img src="images/Actors/Yoon Ji-hye.jpg">
                     <h3>Yoon Ji-hye</h3>
-                    <h3 class="cName">Nora's Mom</h3>
+                    <h3 id="cName">Nora's Mom</h3>
                 </div>
                 <!--Choi Woo-shik-->
                 <div class="element">
@@ -171,49 +99,49 @@
                 <div class="element">
                     <img src="images/Actors/Hwang Seung-eon.jpg">
                     <h3>Hwang Seung-eon</h3>
-                    <h3 class="cName">Hae Sung's Girlfriend</h3>
+                    <h3 id="cName">Hae Sung's Girlfriend</h3>
                 </div>
                 <!--AHN Min-young-->
                 <div class="element">
                     <img src="images/Actors/AHN Min-young.jpg">
                     <h3>AHN Min-young</h3>
-                    <h3 class="cName">Hae Sung's Mom</h3>
+                    <h3 id="cName">Hae Sung's Mom</h3>
                 </div>
                 <!--Jonica T. Gibbs-->
                 <div class="element">
                     <img src="images/Actors/Jonica T. Gibbs.jpg">
                     <h3>Jonica T. Gibbs</h3>
-                    <h3 class="cName">Janice</h3>
+                    <h3 id="cName">Janice</h3>
                 </div>
                 <!--Nathan Clarkson-->
                 <div class="element">
                     <img src="images/Actors/Nathan Clarkson.jpg">
                     <h3>Nathan Clarkson</h3>
-                    <h3 class="cName">Couple</h3>
+                    <h3 id="cName">Couple</h3>
                 </div>
                 <!--Bob Leszczak-->
                 <div class="element">
                     <img src="images/Actors/Bob Leszczak.jpg">
                     <h3>Bob Leszczak</h3>
-                    <h3 class="cName">Park Goer</h3>
+                    <h3 id="cName">Park Goer</h3>
                 </div>
                 <!--Emily Cass McDonnell-->
                 <div class="element">
                     <img src="images/Actors/Emily Cass McDonnell.jpg">
                     <h3>Emily Cass McDonnell</h3>
-                    <h3 class="cName">Rachel</h3>
+                    <h3 id="cName">Rachel</h3>
                 </div>
                 <!--Leem Seung-min-->
                 <div class="element">
-                    <img class="leemSeung" src="images/Actors/Leem Seung-min.jpg">
+                    <img style="width: 250px;" src="images/Actors/Leem Seung-min.jpg">
                     <h3>Leem Seung-min</h3>
-                    <h3 class="cName">Hae Sung</h3>
+                    <h3 id="cName">Hae Sung</h3>
                 </div>
                 <!--Moon Seung-ah-->
                 <div class="element">
                     <img src="images/Actors/Moon Seung-ah.jpg">
                     <h3>Moon Seung-ah</h3>
-                    <h3 class="cName">Nora</h3>
+                    <h3 id="cName">Nora</h3>
                 </div>
                 <!--Jane Kim-->
                 <div class="element">
@@ -222,34 +150,35 @@
                 </div>
                 <!--Jack Alberts-->
                 <div class="element">
-                    <img class="jackAlberts" src="images/Actors/Jack Alberts.jpg">
+                    <img style="width: 250px" src="images/Actors/Jack Alberts.jpg">
                     <h3>Jack Alberts</h3>
-                    <h3 class="cName">CBP Officer</h3>
+                    <h3 id="cName">CBP Officer</h3>
                 </div>
                 <!--Lisa Dennett-->
                 <div class="element">
-                    <img class="lisaDennett" src="images/Actors/Lisa Dennett.jpg">
+                    <img style="width: 225px;" src="images/Actors/Lisa Dennett.jpg">
                     <h3>Lisa Dennett</h3>
-                    <h3 class="cName">Canadian Border Patrol Officer</h3>
+                    <h3 id="cName">Canadian Border Patrol Officer</h3>
                 </div>
                 <!--Shin Hee-Chul-->
-                <div class="Shin Hee-Chul">
+                <div class="element">
                     <img src="images/Actors/Shin Hee-Chul.jpg">
                     <h3>Shin Hee-Chul</h3>
-                    <h3 class="cName">Hae Sung's Friend 2</h3>
+                    <h3 id="cName">Hae Sung's Friend 2</h3>
                 </div>
-            </section>
-        </article>
+            </div>
+        </section>
+        <br>
         <!--ONDE ASSISTIR-->
-        <article>
+        <section>
             <h2>Onde Assistir</h2>
-            <section class="scrollHorizontal">
+            <div id="container">
                 <!--Youtube-->
                 <div class="element2">
                     <a href="https://www.youtube.com/watch?v=M7x9nUASqpI">
                         <img class="icon" src="images/Icons/youtube_40x40.png">
                         <h3>Youtube</h3>
-                        <h3 class="cName">A partir de R$18,90</h3>
+                        <h3 id="cName">A partir de R$18,90</h3>
                     </a>
                 </div>
                 <!--Google Play Filmes-->
@@ -257,7 +186,7 @@
                     <a href="https://play.google.com/store/movies/details?id=QI39vD6KtWo.P">
                         <img class="icon" src="images/Icons/googleplaytvandmovies_40x40.png">
                         <h3>Google Play Movies</h3>
-                        <h3 class="cName">A partir de R$18,90</h3>
+                        <h3 id="cName">A partir de R$18,90</h3>
                     </a>
                 </div>
                 <!--Amazon Prime Video-->
@@ -265,7 +194,7 @@
                     <a href="https://www.primevideo.com/dp/amzn1.dv.gti.92cc2fd1-d021-45f4-9afb-ef8ed4c0ffd5?autoplay=0&ref_=atv_cf_strg_wb">
                         <img class="icon" src="images/Icons/amazon_prime_40x40.png">
                         <h3>Amazon Prime Video</h3>
-                        <h3 class="cName">A partir de R$18,90</h3>
+                        <h3 id="cName">A partir de R$18,90</h3>
                     </a>
                 </div>
                 <!--Apple Tv-->
@@ -273,11 +202,11 @@
                     <a href="https://tv.apple.com/br/movie/past-lives/umc.cmc.tzz5x8oih45dccm7djuquugl?action=play">
                         <img class="icon" src="images/Icons/apple_tv_plus_40x40.png">
                         <h3>Apple TV</h3>
-                        <h3 class="cName">A partir de R$19,90</h3>
+                        <h3 id="cName">A partir de R$19,90</h3>
                     </a>
                 </div>
-            </section>
-        </article>
+            </div>
+        </section>
     </main>
 </body>
 </html>
