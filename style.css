@@ -32,11 +32,11 @@ header{
     box-shadow: 0 4px 2px -2px rgb(42, 42, 42);
     /* border: 3px solid red; */
 }
-header img{
+#logo{
     width: 120px;
     height: 120px;
 }
-header h1{
+#titulo{
     text-align: center;
     text-transform: uppercase;
 }

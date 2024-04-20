@@ -13,43 +13,11 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
     Geneva, Verdana, sans-serif;
 }
-
-h2{font-size: xx-large;}
-#cName{color: #888888;}
-p{font-size: large;}
 img{
     width: 150px;
     height: 200px;
 }
 
-#container{
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    overflow: auto;
-}
-#container .element{
-    margin-right: 20px;
-    line-height: 20px;
-    text-align: center;
-}
-#container .element2{
-    margin-right: 50px;
-    line-height: 20px;
-    text-align: center;
-}
-#container .element2 .icon{
-    width: 100px;
-    height: 100px;
-}
-
-#filme{
-    width: 400px;
-    height: 600px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 header{
     width: 100%;
     max-width: inherit;
@@ -65,13 +33,44 @@ header{
     box-shadow: 0 4px 2px -2px rgb(42, 42, 42);
     /* border: 3px solid red; */
 }
-header img{
+#logo{
     width: 120px;
     height: 120px;
 }
-header h1{
+#titulo{
     text-align: center;
     text-transform: uppercase;
+}
+
+#filme{
+    width: 400px;
+    height: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2{font-size: xx-large;}
+.cName{color: #888888;}
+p{font-size: large;}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    overflow: auto;
+}
+.element{
+    margin-right: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.element2{
+    margin-right: 50px;
+    line-height: 20px;
+    text-align: center;
+}
+.icon{
+    width: 100px;
+    height: 100px;
 }
 
 main{
@@ -127,11 +126,11 @@ main{
     main{
         max-width: 1280px;
     }
-    #container{
+    .container{
         flex-flow: row wrap;
         justify-content: space-evenly;
     }
-    #container .element{
+    .element{
         margin-right: 50px;
     }
 }
@@ -143,7 +142,7 @@ main{
     main{
         max-width: 1536px;
     }
-    #container{
+    .container{
         flex-flow: row wrap;
         justify-content: space-evenly;
         gap: 50px 50px;
