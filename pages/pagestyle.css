@@ -19,8 +19,6 @@ img{
 }
 
 header{
-    width: 100%;
-    max-width: inherit;
     margin-left: auto;
     margin-right: auto;
     padding-left: 0.5rem;
@@ -33,25 +31,20 @@ header{
     box-shadow: 0 4px 2px -2px rgb(42, 42, 42);
     /* border: 3px solid red; */
 }
-#logo{
-    width: 120px;
-    height: 120px;
-}
 #titulo{
     text-align: center;
     text-transform: uppercase;
 }
-
 #filme{
-    width: 400px;
-    height: 600px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
 h2{font-size: xx-large;}
 .cName{color: #888888;}
 p{font-size: large;}
+
 .container{
     margin-left: auto;
     margin-right: auto;
@@ -74,7 +67,6 @@ p{font-size: large;}
 }
 
 main{
-    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 0.5rem;
@@ -83,12 +75,83 @@ main{
     /* border: 3px solid red; */
 }
 
+@media (min-width: 320px){
+    header{
+        max-width: 320px;
+    }
+    main{
+        max-width: 320px;
+    }
+    #logo{
+        width: 100px;
+        height: 100px;
+    }
+    #titulo{
+        font-size: x-large;
+    }
+    #filme{
+        width: 280px;
+        height: 425px;
+    }
+}
+
+@media (min-width: 375px){
+    header{
+        max-width: 375px;
+    }
+    main{
+        max-width: 375px;
+    }
+    #logo{
+        width: 120px;
+        height: 120px;
+    }
+    #titulo{
+        font-size: x-large;
+    }
+    #filme{
+        width: 340px;
+        height: 500px;
+    }
+}
+
+@media (min-width: 425px) {
+    header{
+        max-width: 425px;
+    }
+    main{
+        max-width: 425px;
+    }
+    #logo{
+        width: 120px;
+        height: 120px;
+    }
+    #titulo{
+        font-size: xx-large;
+    }
+    #filme{
+        width: 395px;
+        height: 595px;
+    }
+}
+
 @media (min-width: 475px) {
     header{
         max-width: 475px;
     }
     main{
         max-width: 475px;
+    }
+    #logo{
+        width: 120px;
+        height: 120px;
+    }
+    #titulo{
+        font-size: xx-large;
+    }
+    #filme{
+        width: 400px;
+        height: 600px;
     }
 }
 
@@ -99,6 +162,17 @@ main{
     main{
         max-width: 640px;
     }
+    #logo{
+        width: 120px;
+        height: 120px;
+    }
+    #titulo{
+        font-size: xx-large;
+    }
+    #filme{
+        width: 400px;
+        height: 600px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -107,6 +181,17 @@ main{
     }
     main{
         max-width: 768px;
+    }
+    #logo{
+        width: 120px;
+        height: 120px;
+    }
+    #titulo{
+        font-size: xx-large;
+    }
+    #filme{
+        width: 400px;
+        height: 600px;
     }
 }
 
@@ -117,6 +202,17 @@ main{
     main{
         max-width: 1024px;
     }
+    #logo{
+        width: 120px;
+        height: 120px;
+    }
+    #titulo{
+        font-size: xx-large;
+    }
+    #filme{
+        width: 400px;
+        height: 600px;
+    }
 }
 
 @media (min-width: 1280px) {
@@ -125,6 +221,17 @@ main{
     }
     main{
         max-width: 1280px;
+    }
+    #logo{
+        width: 120px;
+        height: 120px;
+    }
+    #titulo{
+        font-size: xx-large;
+    }
+    #filme{
+        width: 400px;
+        height: 600px;
     }
     .container{
         flex-flow: row wrap;
@@ -141,6 +248,17 @@ main{
     }
     main{
         max-width: 1536px;
+    }
+    #logo{
+        width: 120px;
+        height: 120px;
+    }
+    #titulo{
+        font-size: xx-large;
+    }
+    #filme{
+        width: 400px;
+        height: 600px;
     }
     .container{
         flex-flow: row wrap;
