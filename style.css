@@ -18,44 +18,29 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
     Geneva, Verdana, sans-serif;
 }
-img{
-    width: 300px;
-    height: 450px;
+.nav-item a:hover{
+    transform: scale(1.15, 1.15);
+    transition: 0.5s;
 }
-header{
-    margin-left: auto;
-    margin-right: auto;
-    background: #000;
-    top: 0;
-    align-items: center;
-    position: sticky;
-    display: flex;
-    box-shadow: 0 4px 2px -2px rgb(42, 42, 42);
-    /* border: 3px solid red; */
-}
-#logo{
-    width: 120px;
-    height: 120px;
-}
-#titulo{
+.card{
+    border: 2px solid rgb(100, 100, 100);
+    background-color: #252525;
+    justify-content: center;
     text-align: center;
-    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.card a:hover{
+    color: rgb(120, 0, 0);
+    transition: 0.5s;
 }
 main{
     margin-left: auto;
     margin-right: auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    margin-top: 10px;
+    margin-top: 100px;
     /* border: 3px solid red; */
 }
-section{
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 200px;
-    text-align: center;
-}
-
 footer{
     background-color: #494949;
     /* border: 3px solid red; */
@@ -63,7 +48,6 @@ footer{
 #grid{
     box-shadow: 0 -4px 2px rgb(51, 51, 51);
     display: grid;
-    width: 100%;
     /* border: 3px solid red; */ 
 }
 .social{
@@ -111,123 +95,213 @@ footer{
 }
 
 @media (max-width: 475px){
-    #grid{
-        width: 100%;
-    }
     .botao ul{
         flex-direction: column;
     }
     .botao ul li{
-        width: 100%;
+        width: 90%;
         text-align: center;
         margin: 10px;
     }
 }
 
 @media (min-width: 320px){
-    header{
-        max-width: 320px;
-    }
-    #titulo{
-        margin-right: 10%;
-    }
     main{
         max-width: 320px;
+    }
+    .card{
+        width: 18rem;
+        height: 26rem;
+    }
+    .card-img-top{
+        width: 260px;
+        height: 350px;
     }
 }
 
 @media (min-width: 375px){
-    header{
-        max-width: 375px;
-    }
-    #titulo{
-        margin-right: 15%;
-    }
     main{
         max-width: 375px;
+    }
+    .card{
+        width: 9.5rem;
+        height: 15rem;
+    }
+    .card-title{
+        font-size: medium;
+    }
+    .card-img-top{
+        width: 140px;
+        height: 200px;
     }
 }
 
 @media (min-width: 425px){
-    header{
-        max-width: 425px;
-    }
-    #titulo{
-        margin-right: 20%;
-    }
     main{
         max-width: 425px;
+    }
+    .card{
+        width: 11rem;
+        height: 18rem;
+    }
+    .card-title{
+        font-size: large;
+    }
+    .card-img-top{
+        width: 160px;
+        height: 245px;
     }
 }
 
 @media (min-width: 475px) {
-    header{
-        max-width: 475px;
-    }
-    #titulo{
-        margin-left: 5%;
-    }
     main{
         max-width: 475px;
+    }
+    .card{
+        width: 12.5rem;
+        height: 19.5rem;
+    }
+    .card-title{
+        font-size: large;
+    }
+    .card-img-top{
+        width: 180px;
+        height: 260px;
+    }
+}
+
+@media (min-width: 576px) {
+    main{
+        max-width: 576px;
+    }
+    .card{
+        width: 15rem;
+        height: 25rem;
+    }
+    .card-title{
+        font-size: x-large;
+    }
+    .card-img-top{
+        width: 220px;
+        height: 340px;
     }
 }
 
 @media (min-width: 640px) {
-    header{
-        max-width: 640px;
-    }
-    #titulo{
-        margin-left: 10%;
-    }
     main{
         max-width: 640px;
+    }
+    .card{
+        width: 15rem;
+        height: 25rem;
+    }
+    .card-title{
+        font-size: x-large;
+    }
+    .card-img-top{
+        width: 220px;
+        height: 340px;
     }
 }
 
 @media (min-width: 768px) {
-    header{
-        max-width: 768px;
-    }
-    #titulo{
-        margin-left: 15%;
-    }
     main{
         max-width: 768px;
+    }
+    .card{
+        width: 20rem;
+        height: 30rem;
+    }
+    .card-title{
+        font-size: xx-large;
+    }
+    .card-img-top{
+        width: 285px;
+        height: 400px;
+    }
+}
+
+@media (min-width: 992px) {
+    main{
+        max-width: 992px;
+    }
+    .card{
+        width: 19.5rem;
+        height: 29.5rem;
+    }
+    .card-title{
+        font-size: xx-large;
+    }
+    .card-img-top{
+        width: 285px;
+        height: 400px;
     }
 }
 
 @media (min-width: 1024px) {
-    header{
-        max-width: 1024px;
-    }
-    #titulo{
-        margin-left: 24%;
-    }
     main{
         max-width: 1024px;
+    }
+    .card{
+        width: 19.5rem;
+        height: 29.5rem;
+    }
+    .card-title{
+        font-size: xx-large;
+    }
+    .card-img-top{
+        width: 285px;
+        height: 400px;
     }
 }
 
 @media (min-width: 1280px) {
-    header{
-        max-width: 1280px;
-    }
-    #titulo{
-        margin-left: 29%;
-    }
     main{
         max-width: 1280px;
+    }
+    .card{
+        width: 20rem;
+        height: 30rem;
+    }
+    .card-title{
+        font-size: xx-large;
+    }
+    .card-img-top{
+        width: 285px;
+        height: 400px;
+    }
+}
+
+@media (min-width: 1400px) {
+    main{
+        max-width: 1400px;
+    }
+    .card{
+        width: 20rem;
+        height: 30rem;
+    }
+    .card-title{
+        font-size: xx-large;
+    }
+    .card-img-top{
+        width: 285px;
+        height: 400px;
     }
 }
 
 @media (min-width: 1536px) {
-    header{
-        max-width: 1536px;
-    }
-    #titulo{
-        margin-left: 33%;
-    }
     main{
         max-width: 1536px;
+    }
+    .card{
+        width: 20rem;
+        height: 30rem;
+    }
+    .card-title{
+        font-size: xx-large;
+    }
+    .card-img-top{
+        width: 285px;
+        height: 400px;
     }
 }

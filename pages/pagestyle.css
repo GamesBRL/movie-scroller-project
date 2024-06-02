@@ -12,45 +12,33 @@ a{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
     Geneva, Verdana, sans-serif;
 }
+.nav-item a:hover{
+    transform: scale(1.15, 1.15);
+    transition: 0.5s;
+}
 body{
     background-color: #000;
     color: #ddd;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
     Geneva, Verdana, sans-serif;
 }
+h2{
+    border-bottom: 2px solid white;
+    font-size: xx-large;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
 img{
     width: 150px;
     height: 200px;
-}
-header{
-    margin-left: auto;
-    margin-right: auto;
-    background: #000;
-    top: 0;
-    align-items: center;
-    position: sticky;
-    display: flex;
-    box-shadow: 0 4px 2px -2px rgb(42, 42, 42);
-    /* border: 3px solid red; */
-}
-#titulo{
-    text-align: center;
-    text-transform: uppercase;
 }
 #filme{
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-h2{font-size: xx-large; margin-top: 50px; margin-bottom: 20px;}
 .cName{color: #888888;}
 p{font-size: large;}
-.container{
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    overflow: auto;
-}
 .element{
     margin-right: 20px;
     line-height: 20px;
@@ -70,7 +58,7 @@ main{
     margin-right: auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    margin-top: 10px;
+    margin-top: 100px;
     /* border: 3px solid red; */
 }
 
@@ -130,7 +118,7 @@ footer{
 
 @media (max-width: 475px){
     #grid{
-        width: 100%;
+        width: 90%;
     }
     .botao ul{
         flex-direction: column;
@@ -143,15 +131,8 @@ footer{
 }
 
 @media (min-width: 320px){
-    header{
-        max-width: 320px;
-    }
     main{
         max-width: 320px;
-    }
-    #logo{
-        width: 100px;
-        height: 100px;
     }
     #titulo{
         font-size: x-large;
@@ -163,15 +144,8 @@ footer{
 }
 
 @media (min-width: 375px){
-    header{
-        max-width: 375px;
-    }
     main{
         max-width: 375px;
-    }
-    #logo{
-        width: 120px;
-        height: 120px;
     }
     #titulo{
         font-size: x-large;
@@ -183,15 +157,8 @@ footer{
 }
 
 @media (min-width: 425px) {
-    header{
-        max-width: 425px;
-    }
     main{
         max-width: 425px;
-    }
-    #logo{
-        width: 120px;
-        height: 120px;
     }
     #titulo{
         font-size: xx-large;
@@ -203,15 +170,8 @@ footer{
 }
 
 @media (min-width: 475px) {
-    header{
-        max-width: 475px;
-    }
     main{
         max-width: 475px;
-    }
-    #logo{
-        width: 120px;
-        height: 120px;
     }
     #titulo{
         font-size: xx-large;
@@ -223,15 +183,8 @@ footer{
 }
 
 @media (min-width: 640px) {
-    header{
-        max-width: 640px;
-    }
     main{
         max-width: 640px;
-    }
-    #logo{
-        width: 120px;
-        height: 120px;
     }
     #titulo{
         font-size: xx-large;
@@ -243,15 +196,8 @@ footer{
 }
 
 @media (min-width: 768px) {
-    header{
-        max-width: 768px;
-    }
     main{
         max-width: 768px;
-    }
-    #logo{
-        width: 120px;
-        height: 120px;
     }
     #titulo{
         font-size: xx-large;
@@ -263,15 +209,8 @@ footer{
 }
 
 @media (min-width: 1024px) {
-    header{
-        max-width: 1024px;
-    }
     main{
         max-width: 1024px;
-    }
-    #logo{
-        width: 120px;
-        height: 120px;
     }
     #titulo{
         font-size: xx-large;
@@ -283,15 +222,8 @@ footer{
 }
 
 @media (min-width: 1280px) {
-    header{
-        max-width: 1280px;
-    }
     main{
         max-width: 1280px;
-    }
-    #logo{
-        width: 120px;
-        height: 120px;
     }
     #titulo{
         font-size: xx-large;
@@ -299,10 +231,6 @@ footer{
     #filme{
         width: 400px;
         height: 600px;
-    }
-    .container{
-        flex-flow: row wrap;
-        justify-content: space-evenly;
     }
     .element{
         margin-right: 50px;
@@ -310,15 +238,8 @@ footer{
 }
 
 @media (min-width: 1536px) {
-    header{
-        max-width: 1536px;
-    }
     main{
         max-width: 1536px;
-    }
-    #logo{
-        width: 120px;
-        height: 120px;
     }
     #titulo{
         font-size: xx-large;
@@ -326,10 +247,5 @@ footer{
     #filme{
         width: 400px;
         height: 600px;
-    }
-    .container{
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-        gap: 50px 50px;
     }
 }
