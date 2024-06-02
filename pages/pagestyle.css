@@ -49,6 +49,10 @@ p{font-size: large;}
     line-height: 20px;
     text-align: center;
 }
+.element2 a:hover{
+    color: rgb(120, 0, 0);
+    transition: 0.5s;
+}
 .icon{
     width: 100px;
     height: 100px;
